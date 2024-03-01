@@ -303,7 +303,7 @@ About section
 }
 
 .about-img-container {
-  width: 60%;
+  width: 500px;
   margin: 0 auto;
   border: 7px solid var(--clr-primary);
   transition: var(--transition);
@@ -318,4 +318,30 @@ About section
 .about-img:hover {
   opacity: 0.7;
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 850px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    width: 60vw;
+  }
+
+  .about-info {
+    padding: 2rem 0 0 3rem;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--clr-white);
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 100vw;
+  }
+
+  .about-info {
+    padding: 2rem 0 0 3rem;
+  }
 }
