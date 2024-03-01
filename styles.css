@@ -338,10 +338,10 @@ About section
     background: var(--clr-white);
     align-items: center;
     margin-bottom: 5rem;
-    width: 100vw;
+    width: 100%;
   }
 
   .about-info {
-    padding: 2rem 0 0 3rem;
+    padding: 2rem 0 0 0rem;
   }
 }
