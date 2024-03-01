@@ -58,6 +58,16 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.btn {
+  background: var(--clr-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--clr-primary);
+  transition: var(--transition);
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -113,4 +123,55 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
+}
+
+/* 
+===============
+Hero
+===============
+*/
+
+.hero-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/main-bcg.jpeg") center/cover no-repeat fixed;
+  min-height: 100vh;
+}
+
+.hero-container h1 {
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  max-width: 500px;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+.hero-container h2 {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.grid-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.hero-btn {
+  justify-self: center;
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 4px;
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  padding: 0.75rem 1.25rem;
+}
+
+.hero-btn:hover {
+  color: var(--clr-primary);
+  background: var(--clr-primary-light);
 }
