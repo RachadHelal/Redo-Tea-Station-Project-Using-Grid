@@ -364,3 +364,57 @@ About section
     max-width: 480px;
   }
 }
+
+/* 
+===============
+Products section
+===============
+*/
+
+.products-container {
+  background: var(--clr-grey-10);
+}
+
+.products-grid-center {
+  width: 85vw;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.section-h3 {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+}
+
+.section-h2 {
+  font-family: var(--ff-primary);
+  margin-bottom: 2.5rem;
+}
+
+.section-p {
+  max-width: 500px;
+  color: var(--clr-grey-5);
+}
+
+.section-a {
+  margin-bottom: 4rem;
+}
+
+.product-card img {
+  border-radius: var(--radius);
+  max-height: 280px;
+  object-fit: cover;
+}
+
+.product-card h4 {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.product-card p {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  letter-spacing: var(--spacing);
+  font-weight: bolder;
+}
