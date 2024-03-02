@@ -66,6 +66,7 @@ p {
   text-transform: uppercase;
   font-family: var(--clr-primary);
   transition: var(--transition);
+  font-weight: bold;
 }
 
 @media screen and (min-width: 800px) {
@@ -151,6 +152,7 @@ Hero
   font-family: var(--ff-secondary);
   font-weight: bold;
   margin-bottom: 2rem;
+  max-width: 400px;
 }
 
 .hero-center {
@@ -277,3 +279,85 @@ Info section
 About section
 ===============
 */
+
+.about-grid {
+  width: 85vw;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.about-img-container {
+  background: var(--clr-primary);
+  border: 8px solid var(--clr-primary);
+  overflow: hidden;
+  margin-bottom: 4rem;
+  max-width: 500px;
+}
+
+.about-img {
+  transition: var(--transition);
+  max-width: 500px;
+}
+
+.about-img:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+
+.about-info h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+  font-size: 1.75rem;
+}
+
+.about-info h2 {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+}
+
+.about-info p {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-5);
+  max-width: 450px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-info a {
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+  font-size: 0.85rem;
+  font-family: var(--ff-primary) d;
+}
+
+@media screen and (min-width: 992px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
+
+  .about-img-container {
+    min-width: 380px;
+  }
+
+  .about-info p {
+    max-width: 420px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+
+  .about-info p {
+    max-width: 420px;
+  }
+}
