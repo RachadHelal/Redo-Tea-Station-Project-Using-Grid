@@ -270,7 +270,7 @@ Info section
   }
 }
 
-@media screen and (min-width: 998px) {
+@media screen and (min-width: 1220px) {
   .grid-center {
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
@@ -423,7 +423,12 @@ Products section
   .cards-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem 2rem;
+    gap: 2rem;
+  }
+
+  .product-card img {
+    max-width: 380px;
+    height: 280px;
   }
 }
 
@@ -437,8 +442,8 @@ Products section
   }
 
   .product-card img {
-    max-width: 350px;
-    height: 260px;
+    max-width: 380px;
+    height: 280px;
   }
 }
 
