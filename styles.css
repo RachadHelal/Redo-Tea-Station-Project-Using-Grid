@@ -231,8 +231,8 @@ Info section
 
 .info-card i {
   color: var(--clr-primary);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 .info-card h3 {
@@ -242,8 +242,8 @@ Info section
 
 .info-card p {
   color: var(--clr-grey-5);
-  min-width: 300px;
   max-width: 300px;
+  font-weight: 200;
 }
 
 @media screen and (min-width: 390px) {
@@ -273,7 +273,16 @@ Info section
 @media screen and (min-width: 1220px) {
   .grid-center {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0;
+  }
+
+  .info-card {
+    padding: 3rem 2.2rem;
+  }
+
+  .info-card p {
+    min-width: 270px;
+    margin: 0 auto;
+    font-size: 0.95rem;
   }
 }
 
@@ -352,7 +361,7 @@ About section
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 90vw;
+    max-width: 80vw;
     margin-bottom: 1rem;
   }
 
@@ -445,12 +454,19 @@ Products section
     max-width: 380px;
     height: 280px;
   }
+
+  .section-p {
+    max-width: 400px;
+    line-height: 1.7;
+    font-weight: 200;
+  }
 }
 
 @media screen and (min-width: 1220px) {
   .products-grid-center {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    max-width: 80vw;
   }
 
   .cards-grid-container {
@@ -458,7 +474,7 @@ Products section
   }
 
   .product-card img {
-    max-width: 250px;
+    max-width: 280px;
     height: 270px;
   }
 
