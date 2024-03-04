@@ -709,6 +709,10 @@ textarea {
   width: 550px;
 }
 
+::placeholder {
+  color: var(--clr-grey-5);
+}
+
 @media screen and (min-width: 992px) {
   .form-container-grid {
     display: grid;
