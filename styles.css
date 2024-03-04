@@ -625,7 +625,7 @@ Form section
 
 .form-container {
   background: var(--clr-grey-10);
-  padding: 4rem 0;
+  padding: 5rem 0 9rem 0;
   margin-top: 6rem;
 }
 
@@ -666,6 +666,7 @@ Form section
   border-top-right-radius: var(--radius);
   padding: 1rem 0.5rem 2.5rem 0.5rem;
   width: 100%;
+  position: relative;
 }
 
 .contact-form h2 {
@@ -706,7 +707,16 @@ textarea {
   border-bottom-right-radius: var(--radius);
   letter-spacing: var(--spacing);
   font-weight: bold;
+  transition: var(--transition);
+  position: absolute;
   width: 100%;
+  top: 100%;
+  left: 0%;
+}
+
+.submit-btn:hover {
+  background: var(--clr-primary-light);
+  cursor: pointer;
 }
 
 ::placeholder {
