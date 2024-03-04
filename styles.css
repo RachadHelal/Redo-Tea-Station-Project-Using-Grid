@@ -616,3 +616,88 @@ Services section
     max-width: 350px;
   }
 }
+
+/* 
+===============
+Form section
+===============
+*/
+
+.form-container {
+  background: var(--clr-grey-10);
+  padding: 4rem 0;
+  margin-top: 6rem;
+}
+
+.form-container-grid {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.inner-form-info {
+  margin-bottom: 1.5rem;
+}
+
+.inner-form-info span {
+  color: var(--clr-primary);
+  letter-spacing: var(--spacing);
+}
+
+.form-h4 {
+  padding-top: 0.75rem;
+  max-width: 300px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.form-icon {
+  padding-right: 0.5rem;
+}
+
+.contact-form {
+  background-color: var(--clr-white);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  padding: 1rem 0.5rem 2.5rem 0.5rem;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: var(--clr-grey-5);
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+.contact-form input {
+  display: block;
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--clr-grey-10);
+  width: 90%;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.75rem;
+  letter-spacing: var(--spacing);
+}
+
+textarea {
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--clr-grey-10);
+  padding: 0.75rem;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: var(--spacing);
+}
+
+.submit-btn {
+  color: var(--clr-white);
+  background: var(--clr-primary);
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+}
