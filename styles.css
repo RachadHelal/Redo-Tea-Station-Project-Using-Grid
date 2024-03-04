@@ -278,7 +278,7 @@ Info section
   }
 
   .info-card {
-    padding: 3rem 2.2rem;
+    padding: 3rem 0;
   }
 
   .info-card p {
@@ -733,4 +733,39 @@ textarea {
   .form-h4 {
     font-size: 1rem;
   }
+}
+
+/* 
+===============
+Footer
+===============
+*/
+
+.footer-container {
+  background: #222222;
+  color: var(--clr-white);
+  text-align: center;
+  padding: 3rem 0.5rem 2rem 0.5rem;
+}
+
+.footer-icon {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  transition: var(--transition);
+  color: var(--clr-white);
+}
+
+.footer-icon:hover {
+  color: var(--clr-primary);
+}
+
+.footer-container p {
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  letter-spacing: var(--spacing);
+}
+
+.footer-tea {
+  color: var(--clr-primary);
 }
