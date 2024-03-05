@@ -145,6 +145,7 @@ Hero
   position: relative;
   /* animation */
   overflow-x: hidden;
+  width: auto;
 }
 .banner {
   text-align: center;
