@@ -138,62 +138,92 @@ Hero
 ===============
 */
 
-.hero-container {
+.header {
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./images/main-bcg.jpeg") center/cover no-repeat fixed;
-  min-height: 100vh;
   position: relative;
+  /* animation */
   overflow-x: hidden;
 }
-
-.hero-container h1 {
-  color: var(--clr-white);
-  font-family: var(--ff-primary);
-  text-transform: uppercase;
-  max-width: 300px;
-  justify-self: center;
-  margin-bottom: 2rem;
-}
-
-.hero-container h2 {
-  color: var(--clr-primary);
-  font-family: var(--ff-secondary);
-  font-weight: bold;
-  margin-bottom: 2rem;
-  max-width: 400px;
-}
-
-.hero-center {
-  display: flex;
-  flex-direction: column;
+.banner {
   text-align: center;
-  align-items: center;
-  min-height: 100vh;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.hero-btn {
-  justify-self: center;
-  outline: 2px solid var(--clr-primary);
-  outline-offset: 4px;
-  transition: var(--transition);
-  letter-spacing: var(--spacing);
-  padding: 0.75rem 1.25rem;
-}
-
-.hero-btn:hover {
+.banner h2 {
+  font-family: var(--ff-secondary);
   color: var(--clr-primary);
-  background: var(--clr-primary-light);
+  /* animation */
+  animation: slideFromRight 5s ease-in-out 1;
+}
+.banner h1 {
+  text-transform: uppercase;
+  color: var(--clr-white);
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  /* animation */
+  animation: slideFromLeft 5s ease-in-out 1;
+}
+.banner-btn {
+  outline: 0.125rem solid var(--clr-primary);
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+  animation: show 5s linear 1;
 }
 
-@media screen and (min-width: 580px) {
-  .hero-container h1 {
-    color: var(--clr-white);
-    font-family: var(--ff-primary);
-    text-transform: uppercase;
-    max-width: 500px;
-    justify-self: center;
-    margin-bottom: 2rem;
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
