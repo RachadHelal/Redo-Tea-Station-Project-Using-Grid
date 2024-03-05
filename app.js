@@ -1,11 +1,14 @@
-const navBtn = document.getElementById("nav-btn");
-const navbar = document.getElementById("navbar");
-const navClose = document.getElementById("nav-close");
+const menuBar = document.querySelector("#burger-icon");
+const navBar = document.querySelector("#nav-container");
+const navClose = document.querySelector("#close-icon");
 
-navBtn.addEventListener("click", () => {
-  navbar.classList.add("showNav");
+// showing nav bar
+menuBar.addEventListener("click", () => {
+  navBar.classList.add("showNav");
+  console.log(navBar);
 });
 
+// closing nav bar
 navClose.addEventListener("click", () => {
-  navbar.classList.remove("showNav");
+  navBar.classList.remove("showNav");
 });
