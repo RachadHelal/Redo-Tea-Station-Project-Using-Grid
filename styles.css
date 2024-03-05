@@ -117,7 +117,7 @@ Variables
 */
 
 :root {
-  --clr-primary: rgb(103, 142, 62);
+  --clr-primary: #678e3e;
   --clr-primary-light: rgb(190, 237, 140);
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
@@ -377,6 +377,16 @@ About section
   }
 }
 
+@media screen and (min-width: 1540px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 65vw;
+    margin-bottom: 1rem;
+  }
+}
+
 /* 
 ===============
 Products section
@@ -483,6 +493,14 @@ Products section
 
   .section-p {
     max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .products-grid-center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 65vw;
   }
 }
 
@@ -618,6 +636,11 @@ Services section
   }
 }
 
+@media screen and (min-width: 1540px) {
+  .services-container {
+    max-width: 65vw;
+  }
+}
 /* 
 ===============
 Form section
@@ -746,6 +769,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1540px) {
+  .form-container-grid {
+    max-width: 65vw;
+  }
+}
+
 /* 
 ===============
 Footer
@@ -835,8 +864,7 @@ Nav section
 }
 
 .close-icon {
-  color: red;
-  opacity: 0.5;
+  color: #f29c9c;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   left: 85%;
@@ -846,36 +874,30 @@ Nav section
 }
 
 .close-icon:hover {
-  opacity: 1;
+  color: #bb2525;
   cursor: pointer;
 }
 
 .nav-container ul {
   padding-top: 4rem;
-}
-
-.nav-container li {
   list-style: none;
-  padding: 0.25rem 1rem;
-  text-transform: uppercase;
-  color: var(--clr-grey-5);
-  font-family: var(--ff-primary);
-  font-size: 1.35rem;
-  font-weight: 100;
-  letter-spacing: var(--spacing);
-  transition: var(--transition);
-  margin-bottom: 0.5rem;
 }
 
 .nav-link {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
   color: var(--clr-grey-5);
+  transition: var(--transition);
 }
 
-.nav-container li:hover {
+.nav-link:hover {
   background: var(--clr-primary-light);
-  padding-left: 1.25rem;
-  border-left: 4px solid var(--clr-primary);
-  cursor: pointer;
+  color: var(--clr-primary);
+  padding-left: 1.5rem;
+  border-left: 0.25rem solid var(--clr-primary);
 }
 
 @media screen and (min-width: 992px) {
