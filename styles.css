@@ -142,13 +142,15 @@ Hero
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/main-bcg.jpeg") center/cover no-repeat fixed;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .hero-container h1 {
   color: var(--clr-white);
   font-family: var(--ff-primary);
   text-transform: uppercase;
-  max-width: 500px;
+  max-width: 300px;
   justify-self: center;
   margin-bottom: 2rem;
 }
@@ -182,6 +184,17 @@ Hero
 .hero-btn:hover {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
+}
+
+@media screen and (min-width: 580px) {
+  .hero-container h1 {
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    max-width: 500px;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
 }
 
 /* 
